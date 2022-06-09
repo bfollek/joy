@@ -9,10 +9,10 @@
   :repo "")
 
 (phony "server" []
-  (if (= "development" (os/getenv "JOY_ENV"))
-      # TODO check if entr exists
-    (os/shell "find . -name '*.janet' | entr janet main.janet")
-    (os/shell "janet main.janet")))
+       (if (= "development" (os/getenv "JOY_ENV"))
+         # TODO check if entr exists
+         (os/shell "find . -name '*.janet' | entr -r janet main.janet")
+         (os/shell "janet main.janet")))
 
 (declare-executable
   :name "app"
