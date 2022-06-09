@@ -1,7 +1,7 @@
 (declare-project
   :name "{{project-name}}"
   :description ""
-  :dependencies ["https://github.com/joy-framework/joy"
+  :dependencies ["https://github.com/bfollek/joy"
                  "https://github.com/janet-lang/sqlite3"]
   :author ""
   :license ""
